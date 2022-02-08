@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hugo's Restaurant</title>
+</head>
+
+<body>
+    <!--Header - start-->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between ">
+                <div class="logo">
+                    <a href="#"><img width="80px"
+                            src="https://www.designyourway.net/blog/wp-content/uploads/2017/10/hugo.jpg"
+                            alt="Ảnh Logo"></a>
+                </div>
+                <span id="welcome"></span>
+                <button class="nav-toggler">
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <ul>
+                        <li class="nav-item"><a href="#Home"><i class="fas fa-home"></i> Trang chủ</a></li>
+                        <li class="nav-item"><a href="#About"><i class="fas fa-search-plus"></i> Hugo's</a></li>
+                        <li class="nav-item"><a href="#Menu"><i class="fas fa-clipboard-list"></i> Menu</a></li>
+                        <li class="nav-item"><a href="#Testimonial"><i class="fas fa-comments"></i> Phản hồi</a></li>
+                        <li class="nav-item"><a onclick=Redirect()><i class="fas fa-key"></i> Đăng nhập/Đăng kí</a></li>
+                        <li class="nav-item"><a href="#Contact"><i class="fas fa-phone-volume"></i> Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Header - end-->
+    <!--Home-section - begin-->
+    <section class="home-section" id="home">
+        <div class="home-section-bg">
+        </div>
+        <div class="container">
+            <div class="row min-h-100">
+                <div class="home-text">
+                    <h1>Hugo's Restaurant</h1>
+                    <p>Vị ngon trọn khoảnh khắc, tận hưởng theo cách riêng của bạn</p>
+                    <a href="#our-menu" class="btn">KHÁM PHÁ NGAY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home-section - end-->
+    <!-- About-Section-begin -->
+    <section class="about-section section-padding" id="About">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="our story">"HUGO'S RESTAURANT DELICIOUS FOOD LOTS OF LOVE AND CARE"</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-text">
+                    <h3>Welcome to Hugo's Restaurant</h3>
+                    <p>Located in the heart of Houston's Montrose area, Hugo's brings the exciting and earthy flavors of
+                        Mexico across the border.
+                        “Authentic Mexican cooking is a world-class cuisine that has remained virtually unchanged by the
+                        outside world,"
+                        says Executive Chef Hugo Ortega of his native cuisine. "The food is as light and fresh as a
+                        seafood cocktail
+                        prepared by fishermen on the beach; as deep and complex as the moles of Oaxaca made with an
+                        astounding number of ingredients; and as earthy as the simplest handmade corn tortilla."</p>
+                    <p> Hugo’s is housed in a 1925 building designed and built by well-known Houston architect, Joseph
+                        Finger, who is also responsible for Houston's Art-Deco style City Hall. The Latin-inspired
+                        building has been lovingly restored to feature its original beauty, and the interiors designed
+                        to include both "chic" contemporary touches and, most important, inviting traditional elements
+                        of old Mexico.</p>
+                    <a href="#our-menu" class="btn">MENU</a>
+                </div>
+                <div class="about-img">
+                    <div class="img-box">
+                        <h2>30+ Years Experience</h2>
+                        <img src="https://img1.mashed.com/img/gallery/the-oldest-fast-food-chain-in-the-us-might-surprise-you/l-intro-1615688999.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-Section-end -->
+    <!-- Menu-Section-begin -->
+    <section class="menu-section section-padding" id="Menu">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="order now">our menu</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-taps">
+                    <button class="menu-tap-item active" data-title="#Lunch">Sáng</button>
+                    <button class="menu-tap-item" data-title="#Dinner">Tối</button>
+                    <button class="menu-tap-item" data-title="#Drinks">Đồ uống</button>
+                    <button class="menu-tap-item" data-title="#Desserts">Tráng miệng</button>
+                </div>
+            </div>
+            <div class="row menu-tap-content active" id="Lunch">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://cdn.pixabay.com/photo/2021/07/19/16/04/pizza-6478478_960_720.jpg" alt="">
+                        <h3>Pizza ngũ vị</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248_960_720.jpg" alt="">
+                        <h3>Cá hồi</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://cdn.pixabay.com/photo/2018/09/14/11/12/food-3676796_960_720.jpg" alt="">
+                        <h3>Thịt xông khói</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item ">
+                    <div class="menu-item-title">
+                        <img src="https://cdn.pixabay.com/photo/2020/06/10/13/30/food-5282718_960_720.jpg" alt="">
+                        <h3>Ngonnn</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.CAaJQvZoyxUpwC-0yOTvTAHaHa&pid=Api&P=0&w=300&h=300"
+                            alt="">
+                        <h3>Gà quay thơm ngon</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.ECduHGkhuxxQ6cjPaQNXNwHaE8&pid=Api&P=0&w=248&h=166"
+                            alt="">
+                        <h3>Nộm Cún</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.5hF6cgVMS8jdp4GGcn9OLgHaEK&pid=Api&P=0&w=281&h=159"
+                            alt="">
+                        <h3>Lẩu tôm</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.Eq-HsUpQqJHtpN9V60pOVgHaEK&pid=Api&P=0&w=272&h=154"
+                            alt="">
+                        <h3>Mì Ý</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-tap-content" id="Dinner">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://invest.hawaii.gov/buy-hawaii/wp-content/uploads/sites/3/2020/06/local_food_hero_image.jpg"
+                            alt="">
+                        <h3>Món tối</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://invest.hawaii.gov/buy-hawaii/wp-content/uploads/sites/3/2020/06/local_food_hero_image.jpg"
+                            alt="">
+                        <h3>Món tối</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://invest.hawaii.gov/buy-hawaii/wp-content/uploads/sites/3/2020/06/local_food_hero_image.jpg"
+                            alt="">
+                        <h3>Món tối</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://invest.hawaii.gov/buy-hawaii/wp-content/uploads/sites/3/2020/06/local_food_hero_image.jpg"
+                            alt="">
+                        <h3>Món tối</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://invest.hawaii.gov/buy-hawaii/wp-content/uploads/sites/3/2020/06/local_food_hero_image.jpg"
+                            alt="">
+                        <h3>Món tối</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row menu-tap-content" id="Drinks">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://invest.hawaii.gov/buy-hawaii/wp-content/uploads/sites/3/2020/06/local_food_hero_image.jpg"
+                            alt="">
+                        <h3>Đồ uống</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://invest.hawaii.gov/buy-hawaii/wp-content/uploads/sites/3/2020/06/local_food_hero_image.jpg"
+                            alt="">
+                        <h3>Đồ uống</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-tap-content" id="Desserts">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://www.asiangeo.com/2019/wp-content/uploads/2019/05/ICE_CREAM-2-shutterstock_514080436.jpg"
+                            alt="">
+                        <h3>Tráng miệng</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="https://www.asiangeo.com/2019/wp-content/uploads/2019/05/ICE_CREAM-2-shutterstock_514080436.jpg"
+                            alt="">
+                        <h3>Tráng miệng</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p style="margin-left: 20px;"> 150.000 </p>
+                        <button class="btn order">Đặt ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div><button class="btn" style="margin-left: 43% " onclick="thanhToan()">Thanh
+                    toán</button></div>
+        </div>
+    </section>
+    <!-- Menu-Section-end -->
+    <!-- Testimonis-Section -->
+    <section class=" testimony section-padding" id="Testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="testimony">Some Feedback</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testimony-item">
+                    <div class="testimony-author">
+                        <div class="testimony-name">
+                            <h3>Thanh Dương</h3>
+                            <span>Food Specialist</span>
+                        </div>
+                        <div class="testimony-img">
+                            <img src="image/Test1.jpg" alt="">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a elit sit amet
+                        turpis
+                        suscipit pharetra. Nullam ut dictum arcu. Cras non ex nibh. Nulla at neque ipsum.
+                        Curabitur
+                        convallis luctus lacinia.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimony-item">
+                    <div class="testimony-author">
+                        <div class="testimony-name">
+                            <h3>Thanh Dương</h3>
+                            <span>Food Specialist</span>
+                        </div>
+                        <div class="testimony-img">
+                            <img src="image/Test2.jpg" alt="">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a elit sit amet
+                        turpis
+                        suscipit pharetra. Nullam ut dictum arcu. Cras non ex nibh. Nulla at neque ipsum.
+                        Curabitur
+                        convallis luctus lacinia.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimony-item">
+                    <div class="testimony-author">
+                        <div class="testimony-name">
+                            <h3>Thanh Dương</h3>
+                            <span>Food Specialist</span>
+                        </div>
+                        <div class="testimony-img">
+                            <img src="image/Test3.jpg" alt="">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a elit sit amet
+                        turpis
+                        suscipit pharetra. Nullam ut dictum arcu. Cras non ex nibh. Nulla at neque ipsum.
+                        Curabitur
+                        convallis luctus lacinia.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-section -->
+    <section class="footer-section" id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="footer-item">
+                    <h3>Địa chỉ</h3>
+                    <p>72, Hàm Nghi <br> Thạc Gián, Đà Nẵng</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Giờ mở cửa</h3>
+                    <p>09:30-23:00 <br> Các ngày trong tuần</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Liên hệ</h3>
+                    <p>Phone: 0973999949 <br> Email: nguyenns@ABC,com</p>
+                    <div class="social-item">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="copyright">
+                    <p>©2021. Toàn bộ bản quyền thuộc Hugo's Restaurant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!----------------Login/Logout Form -------------->
+
+    <div id="loginForm">
+        <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_960_720.jpg" class="imgLogin" />
+
+        <div class="close">+</div>
+
+        <form class="mainFormLogin">
+            <div class="headerLogin">
+                <button class="btnLogin1">Login</button>
+                <button class="btnRegister1">Register</button>
+            </div>
+
+            <form class="inputLogin">
+                <div class="emailLogin_Ctn">
+                    <input class="emailLogin" type="text" placeholder="Email" />
+                    <br />
+                    <span id="error"></span>
+                </div>
+                <div class="passLogin_Ctn">
+                    <input class="passLogin" type="password" placeholder="Password" />
+                    <br />
+                    <span id="error"></span>
+                </div>
+                <input type="checkbox" id="check-box" value="1" />
+                <span class="checkbox_text">Remember me</span>
+                <button class="submitLogin" type="submit" value="submit">Log in</button>
+            </form>
+        </form>
+
+        <form class="mainFormRgt">
+            <div class="headerLogin">
+                <button class="btnLogin2">Login</button>
+                <button class="btnRegister2">Register</button>
+            </div>
+
+            <form class="inputRegister">
+                <div class="yourName_Ctn">
+                    <input class="yourName" type="text" placeholder="Name" />
+                    <br />
+                    <span id="error"></span>
+                </div>
+                <div class="emailRgt_Ctn">
+                    <input class="emailRgt" type="text" placeholder="Email" />
+                    <br />
+                    <span id="error"></span>
+                </div>
+                <div class="passRgt_Ctn">
+                    <input class="passRgt" type="password" placeholder="Password" />
+                    <br />
+                    <span id="error"></span>
+                </div>
+                <div class="passRgtConfirm_Ctn">
+                    <input class="passRgtConfirm" type="password" placeholder="Confirm Password" />
+                    <br />
+                    <span id="error"></span>
+                </div>
+                <button class="submitRgt" type="submit" value="submit">Register</button>
+            </form>
+        </form>
+    </div>
+
+
+
+    <!---------------------------------Script------------------  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
