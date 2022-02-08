@@ -39,7 +39,7 @@ function Redirect() {
 }
 
 function thanhToan() {
-    window.location = "/Final-Project/thanhtoan/giohang.html"
+    window.location = "/giohang.html"
 }
 
 /* thanh toan */
